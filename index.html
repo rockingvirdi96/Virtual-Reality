@@ -7,16 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.js"></script>
 
 <body>
 
     <a-scene>
-        <a-plane width="100%" position="0 0 0 0" rotation="90" color="yellow"></a-plane>
+        <a-camera class="camera" position="0 0 0" rotation="0 -90 0"></a-camera>
+        <a-plane position="0 0 0" rotation="-90 0 0" scale="5 5 5" color="gray"></a-plane>
+        <a-plane position="10 0 0" rotation="-90 0 0" scale="5 5 5" color="black"></a-plane>
+        <a-sphere class="sphere" position="10 1 0" color="gray">
+        </a-sphere>
+        <a-cone position="10 2.29 0" scale="1 1.8 1" color="red"></a-cone>
     </a-scene>
 
 
 
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.js"></script>
+<script src="./index.js"></script>
 
 </html>
