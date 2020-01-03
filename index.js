@@ -2,7 +2,15 @@ function $(e) {
     return document.querySelector(e);
 }
 
-// var camPos = ;
-if ($('.camera').getAttribute('position') == '0 0 0') {
-    $('.sphere').setAttribute('color', 'blue');
+// var color = $('.sphere').getAttribute('color');
+$('.camera').onchange = function () {
+
+
+    var pos = $('.camera').getAttribute('position');
+    // alert(color);
+    if (pos.x > 5) {
+        $('.sphere').setAttribute('color', 'blue');
+        alert(pos.x);
+    }
 }
+// }
