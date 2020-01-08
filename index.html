@@ -13,12 +13,15 @@
 
     <a-scene>
         <a-sky color="lightblue"></a-sky>
-        <a-camera class="camera" position="0 -1 0" rotation="0 -90 0"></a-camera o>
-        <a-plane position="0 0 0" rotation="-90 0 0" width="5" height="5" color="gray"></a-plane>
-        <a-plane position="10 0 0" rotation="-90 0 0" width="5" height="5" color="black"></a-plane>
-        <a-sphere class="sphere" position="10 1 0" color="gray"></a-sphere>
+        <a-camera class="camera" look-controls position="0 0 0" rotation="0 0 0">
+
+        </a-camera>
+        <!-- animation="property: position; to: '5 0 0'; dur: 10000; easing: linear" -->
+        <a-sphere class="sphere" position="10 0 0" color="gray"></a-sphere>
         </a-sphere>
         <a-cone position="10 2.29 0" scale="1 1.8 1" color="red"></a-cone>
+        <a-plane position="0 0 0" rotation="-90 0 0" width="5" height="5" color="gray"></a-plane>
+        <a-plane position="10 0 0" rotation="-90 0 0" width="5" height="5" color="black"></a-plane>
     </a-scene>
 
 
