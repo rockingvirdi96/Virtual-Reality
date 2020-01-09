@@ -1,16 +1,16 @@
-function $(e) {
+$ = (e) => {
     return document.querySelector(e);
 }
 
-// var color = $('.sphere').getAttribute('color');
-$('.camera').onchange = function () {
-
-
-    var pos = $('.camera').getAttribute('position');
-    // alert(color);
-    if (pos.x > 5) {
-        $('.sphere').setAttribute('color', 'blue');
-        alert(pos.x);
-    }
-}
 // }
+
+// animate = () => {
+//     requestAnimationFrame(animate);
+// }
+
+// requestAnimationFrame(animate);`
+$('a-box').setAttribute('rotation', '0 45 0');
+$('a-box').addEventListener('click', () => {
+
+    $('a-box').setAttribute('animation', 'property: rotation;from: 0 0 0; to: 0 360 0; dur: 10000; easing: linear;loop: true ');
+});
