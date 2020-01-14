@@ -9,7 +9,7 @@ $('a-box').addEventListener('click', () => {
     var from = $('a-box').getAttribute('rotation').y;
     var animation = $('a-box').getAttribute('animation');
     if (!(animation.property == "rotation")) {
-        $('a-box').setAttribute('animation', 'property: rotation;from: 0 ' + from + ' 0 ; to: 0 ' + (360 + from) + ' 0;dur:1000; easing: linear;loop: true ');
+        $('a-box').setAttribute('animation', 'property: rotation;from: 0 ' + from + ' 0 ; to: 0 ' + (360 + from) + ' 0;dur:10000; easing: linear;loop: true ');
         console.log(from);
     }
     else if (animation.property == "rotation") {
@@ -32,10 +32,10 @@ $('#red-box').addEventListener('click', () => {
 });
 
 $('#blue-box').addEventListener('click', () => {
-    var from = $('#blue-box').getAttribute('rotation').y;
+    var from = $('#blue-box').getAttribute('rotation').z;
     var animation = $('#blue-box').getAttribute('animation');
     if (!(animation.property == "rotation")) {
-        $('#blue-box').setAttribute('animation', 'property: rotation;from: 0 0 ' + from + '; to: 0 0 ' + (360 + from) + ';dur:1000; easing: linear;loop: true ');
+        $('#blue-box').setAttribute('animation', 'property: rotation;from: 0 0 ' + from + '; to: 0 0 ' + (360 + from) + ';dur:10000; easing: linear;loop: true ');
         console.log(from);
     }
     else if (animation.property == "rotation") {
@@ -48,7 +48,7 @@ $('#green-box').addEventListener('click', () => {
     var from = $('#green-box').getAttribute('rotation').x;
     var animation = $('#green-box').getAttribute('animation');
     if (!(animation.property == "rotation")) {
-        $('#green-box').setAttribute('animation', 'property: rotation;from:' + from + ' 0' + ' 0 ; to:' + (360 + from) + ' 0 0; dur: 1000; easing: linear; loop: true');
+        $('#green-box').setAttribute('animation', 'property: rotation;from:' + from + ' 0' + ' 0 ; to:' + (360 + from) + ' 0 0; dur: 10000; easing: linear; loop: true');
         console.log(from);
     }
     else if (animation.property == "rotation") {

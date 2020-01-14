@@ -13,9 +13,10 @@
 <script
     src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
 
-<a-scene background="color: skyblue">
-    <a-camera rotation="0 180 0" position="0 1.5 0" spectator="true">
-        <a-cursor geometry="primitive: cone" scale=" 0.03 0.05 0.03"></a-cursor>
+<a-scene background="color:skyblue">
+    <a-camera look-controls universal-controls kinematic-body rotation="0 180 0" fov="90" position="0 0 0"
+        spectator="false">
+        <a-cursor geometry="primitive: cone" scale=" 0.01 0.04 0.01"></a-cursor>
     </a-camera>
     <a-box id="white-box" color="" animation="" position="0 0 -4" rotation="0 0 0">
     </a-box>
@@ -25,10 +26,9 @@
     </a-box>
     <a-box id="green-box" color="green" animation="" position="4 0 0" rotation="0 0 0">
     </a-box>
-
-
 </a-scene>
-<script src="./index.js"></script>
+<script src="./index.js">
+</script>
 
 
 

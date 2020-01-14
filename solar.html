@@ -1,0 +1,45 @@
+<script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+<script
+    src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
+<a-scene background="color:black">
+    <a-camera position="0 0 0" rotation="0 -90 0" spectator="false">
+        <a-cursor primitive="cone" geometry="scale:"></a-cursor>
+    </a-camera>
+    <!-- RINGS -->
+    <!-- a-eni -->
+    <a-torus scale="3 1.5 1" position="0 15 0" radius-tubular="0.001" position="0 1 0" rotation="-90 0 0" color="white">
+
+    </a-torus>
+    <a-torus scale="2 1 1" position="0 15 0" radius-tubular="0.001" position="0 1 0" rotation="-90 0 0" color="white">
+    </a-torus>
+    <a-torus scale="4 2 1" position="0 15 0" radius-tubular="0.001" position="0 1 0" rotation="-90 0 0" color="white">
+    </a-torus>
+    <a-torus scale="5 2.5 1" position="0 15 0" radius-tubular="0.001" position="0 1 0" rotation="-90 0 0" color="white">
+    </a-torus>
+    <a-torus scale="6 3 1" position="0 15 0" radius-tubular="0.001" position="0 1 0" rotation="-90 0 0" color="white">
+    </a-torus>
+    <a-torus scale="7 3.5 1" position="0 15 0" radius-tubular="0.001" position="0 1 0" rotation="-90 0 0" color="white">
+    </a-torus>
+    <a-torus scale="8 4 1" position="0 15 0" radius-tubular="0.001" position="0 1 0" rotation="-90 0 0" color="white">
+    </a-torus>
+    <a-torus scale="9 4.5 1" position="0 15 0" radius-tubular="0.001" position="0 1 0" rotation="-90 0 0" color="white">
+    </a-torus>
+    <a-torus scale="10 5 1" position="0 15 0" radius-tubular="0.001" position="0 1 0" rotation="-90 0 0" color="white">
+    </a-torus>
+
+    <a-sphere id="sun" animation="property:rotation; from:0 0 0;to: 0 360 0;dur:5000;easing:linear; loop: true; "
+        src="./images/sun.jpg" radius="0.6" color="orange" position="-0.5 15 0"></a-sphere>
+    <a-sphere id="mercury" radius="0.3" color="orange" position="2 15 0"></a-sphere>
+    <a-sphere radius="0.3" color="orange" position="3 15 0"></a-sphere>
+    <a-sphere radius="0.3" color="orange" position="4 15 0"></a-sphere>
+    <a-sphere radius="0.3" color="orange" position="5 15 0"></a-sphere>
+    <a-sphere radius="0.3" color="orange" position="6 15 0"></a-sphere>
+    <a-sphere radius="0.3" color="orange" position="7 15 0"></a-sphere>
+    <a-sphere radius="0.3" color="orange" position="8 15 0"></a-sphere>
+    <a-sphere radius="0.3" color="orange" position="9 15 0"></a-sphere>
+    <a-sphere radius="0.3" color="orange" position="10 15 0"></a-sphere>
+
+
+
+</a-scene>
+<script src="./JavaScript/index.js"></script>
